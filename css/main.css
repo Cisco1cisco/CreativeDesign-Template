@@ -4,6 +4,8 @@
   --main-color: #fad02c;
   --title-color: #495057;
   --para-color: #444;
+  --section-color: #eaf0fc;
+  --section-pad: 100px;
   --tran-dur: 0.3s;
 }
 
@@ -23,7 +25,6 @@ html {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
 }
 
 a {
@@ -258,3 +259,93 @@ header nav .icon span {
 }
 
 /* End Landing */
+
+/* Start About */
+
+.about {
+  padding-top: var(--section-pad, 100px);
+  padding-bottom: var(--section-pad, 100px);
+  background-color: var(--section-color, #eaf0fc);
+}
+
+.about .content {
+  background-color: white;
+  padding: 30px 50px;
+  color: var(--para-color, #444);
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .about .content {
+    padding: 30px 25px;
+  }
+}
+
+.about .content::before {
+  content: "About Us";
+  position: absolute;
+  top: 40%;
+  left: -130px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  background-color: var(--main-color, #fad02c);
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  width: 280px;
+  padding: 10px 0;
+  box-shadow: 0 3px 80px rgb(173 181 189 / 30%), 0 0 10px rgb(173 181 189 / 30%);
+}
+
+@media (max-width: 768px) {
+  .about .content::before {
+    display: none;
+  }
+}
+
+.about .content h5 {
+  color: var(--title-color, #495057);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .about .content h5 {
+    font-size: 17px;
+  }
+}
+
+.about .content .cols {
+  display: flex;
+}
+
+.about .content .cols .left,
+.about .content .cols .right {
+  padding: 10px;
+}
+
+.about .content .cols p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.about .content .cols p.sp {
+  font-weight: 700;
+}
+
+.about .content a {
+  color: var(--main-color, #fad02c);
+  text-transform: capitalize;
+}
+
+.about .content a:hover {
+  color: #d4aa05;
+}
+
+/* End About */
