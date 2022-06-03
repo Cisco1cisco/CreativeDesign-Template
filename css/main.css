@@ -357,6 +357,10 @@ header nav .icon span {
   padding-bottom: var(--section-pad, 100px);
 }
 
+.no-name.sp {
+  background-color: var(--section-color, #eaf0fc);
+}
+
 .no-name .container {
   display: flex;
   align-items: center;
@@ -372,6 +376,7 @@ header nav .icon span {
 .no-name .image {
   flex-basis: 50%;
   position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -386,8 +391,7 @@ header nav .icon span {
   }
 }
 
-.no-name .image::before {
-  content: "";
+.no-name .image .after {
   position: absolute;
   top: 10%;
   left: -30px;
@@ -399,9 +403,14 @@ header nav .icon span {
 }
 
 @media (max-width: 768px) {
-  .no-name .image::before {
+  .no-name .image .after {
     display: none;
   }
+}
+
+.no-name .image .after.ri {
+  left: auto;
+  right: -30px;
 }
 
 .no-name .image img {
