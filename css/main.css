@@ -468,3 +468,47 @@ header nav .icon span {
 }
 
 /* End No Name */
+
+/* Start Features */
+
+.features {
+  min-height: 500px;
+  background-image: url(../photos/bg-img-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / 45%);
+}
+
+.features .icon {
+  border: 4px solid var(--main-color, #fad02c);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.features .icon a {
+  font-size: 55px;
+  color: var(--main-color, #fad02c);
+  display: block;
+}
+
+/* End Features */
