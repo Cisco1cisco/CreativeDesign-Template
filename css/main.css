@@ -728,3 +728,118 @@ header nav .icon span {
 }
 
 /* End Contact */
+
+/* Start Footer */
+
+footer {
+  padding-top: var(--section-pad, 100px);
+  background-color: var(--section-color, #eaf0fc);
+}
+
+footer .container .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: calc(var(--section-pad, 100px) / 1.2);
+}
+
+@media (max-width: 768px) {
+  footer .container .content {
+    padding-bottom: calc(var(--section-pad, 100px) / 3);
+  }
+}
+
+footer .item {
+  flex-basis: calc((100% - 30px) / 3);
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  footer .item {
+    flex-basis: 90%;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .item {
+    flex-basis: 100%;
+  }
+}
+
+footer .item h6 {
+  font-size: 16px;
+  color: var(--title-color, #495057);
+  padding-bottom: 5px;
+  font-weight: 700;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+footer .item p {
+  color: var(--para-color, #444);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+footer .item a.logo {
+  color: var(--title-color, #495057);
+  font-size: 16px;
+}
+
+footer .item a.logo span {
+  color: var(--main-color, #fad02c);
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+footer .item .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .item .links a {
+  display: block;
+  padding: 5px;
+  color: var(--main-color, #fad02c);
+}
+
+footer .item .links a:hover {
+  color: #d4aa05;
+}
+
+footer .item i {
+  margin-right: 10px;
+}
+
+footer .copyright {
+  border-top: 1px solid #dee2e6;
+  font-size: 14px;
+  color: var(--para-color, #444);
+  padding: 10px 0;
+}
+
+@media (max-width: 576px) {
+  footer .copyright {
+    text-align: center;
+  }
+}
+
+footer .copyright a {
+  color: var(--main-color, #fad02c);
+  transition: var(--tran-dur, 0.3s);
+  -webkit-transition: var(--tran-dur, 0.3s);
+  -moz-transition: var(--tran-dur, 0.3s);
+  -ms-transition: var(--tran-dur, 0.3s);
+  -o-transition: var(--tran-dur, 0.3s);
+}
+
+footer .copyright a:hover {
+  color: #d4aa05;
+}
+
+/* End Footer */
