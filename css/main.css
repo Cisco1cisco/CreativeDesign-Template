@@ -605,3 +605,22 @@ header nav .icon span {
 }
 
 /* End Testmonial */
+
+/* Start Talk */
+
+.talk {
+  padding-top: var(--section-pad, 100px);
+  padding-bottom: var(--section-pad, 100px);
+  background-image: url(../photos/bg-img-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.talk h1 {
+  font-size: 56px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* End Talk */
